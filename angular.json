@@ -16,9 +16,7 @@
             "outputPath": "dist/dayan-1st",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -27,19 +25,23 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              
-              "./public/css/bootstrap.min.css",
-              "./public/lib/owlcarousel/assets/owl.carousel.min.css",
-              "./public/css/style.css"
+              "public/css/bootstrap.min.css",
+              "public/lib/animate/animate.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
+              "public/css/style.css",
+              "src/styles.css"
             ],
             "scripts": [
-              "./public/lib/wow/wow.min.js",
-              "./public/lib/easing/easing.min.js",
-              "./public/lib/waypoints/waypoints.min.js",
-              "./public/lib/counterup/counterup.min.js",
-              "./public/lib/owlcarousel/owl.carousel.min.js",
-              "./public/js/main.js"
+              "node_modules/jquery/dist/jquery.min.js",
+              "public/lib/wow/wow.min.js",
+              "public/lib/easing/easing.min.js",
+              "public/lib/waypoints/waypoints.min.js",
+              "public/lib/counterup/counterup.min.js",
+
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "public/js/main.js"
             ]
           },
           "configurations": {
@@ -84,10 +86,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -96,21 +95,23 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              
-              "./public/css/bootstrap.min.css",
-              "./public/lib/owlcarousel/assets/owl.carousel.min.css",
-              "./public/css/style.css"
+              "public/css/bootstrap.min.css",
+              "public/lib/animate/animate.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+              "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
+              "public/css/style.css",
+              "src/styles.css"
             ],
             "scripts": [
-              "./public/lib/wow/wow.min.js",
-              "./public/lib/easing/easing.min.js",
-              "./public/lib/waypoints/waypoints.min.js",
-              "./public/lib/counterup/counterup.min.js",
-              "./public/lib/owlcarousel/owl.carousel.min.js",
-              "./public/js/main.js"
-              
-
+              "node_modules/jquery/dist/jquery.min.js",
+              "public/lib/wow/wow.min.js",
+              "public/lib/easing/easing.min.js",
+              "public/lib/waypoints/waypoints.min.js",
+              "public/lib/counterup/counterup.min.js",
+              "node_modules/owl.carousel/dist/owl.carousel.min.js",
+              "public/js/main.js"
             ]
           }
         }
