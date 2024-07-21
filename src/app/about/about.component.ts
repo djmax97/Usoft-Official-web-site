@@ -1,12 +1,26 @@
-import { Component } from '@angular/core';
+import { NgIf } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { HeaderComponent } from "../header/header.component";
+import { ActivatedRoute } from '@angular/router';
+import { NavigationComponent } from "../navigation/navigation.component";
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [],
+  imports: [NgIf, HeaderComponent, NavigationComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+  isActive: boolean = false
+  constructor(private route: ActivatedRoute) {
+
+  }
+  ngOnInit(): void {
+    this.route.params.subscribe((res: any) => {
+      console.log(res.active)
+      this.isActive=res.active=="active" ? true:false
+    })
+  }
 
 }
