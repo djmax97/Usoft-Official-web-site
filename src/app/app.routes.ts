@@ -3,6 +3,7 @@ import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
+import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +23,13 @@ export const routes: Routes = [
       {
         path: 'services/:active',
         component: ServicesComponent,
+        data: {
+          title: "Dayan"
+        }
+      },
+      {
+        path: 'contact',
+        component: ContactComponent,
         data: {
           title: "Dayan"
         }
